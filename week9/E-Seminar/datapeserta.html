@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Peserta Seminar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        h1{
+            color: blueviolet;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        table {
+          width: 80%;
+          border-collapse: collapse;
+          margin: 20px;
+        }
+    
+        th, td {
+          border: 2px solid #ddd;
+          padding: 10px;
+          text-align: center;
+          background-color: beige;
+        }
+    
+        th {
+          background-color: rgb(186, 122, 246);
+        }
+        .container {
+            margin-left: 50px;
+           
+        }
+        .src {
+            margin-left: 70px;
+        }
+      </style>
+</head>
+<body>
+    <!-- ini navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="register.html">Registrasi <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kegiatan.html">Kegiatan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="seminar.html">Seminar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="datapeserta.html">Data</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <!-- tutup navbar -->
+       <!-- buka breadcrumb -->
+       <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="register.html">Registrasi</a></li>
+          <li class="breadcrumb-item"><a href="kegiatan.html">Kegiatan</a></li>
+          <li class="breadcrumb-item"><a href="seminar.html">Seminar</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      <!-- tutup breadcrumb -->
+    <div class="src">
+        
+        <h1>Data Peserta Seminar</h1>
+        
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Nomor</th>
+        <th>Nama Lengkap</th>
+        <th>Tempat Lahir</th>
+        <th>Tanggal Lahir</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Katagori</th>
+        <th>Status</th>
+        <th>Action</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>0444</td>
+        <td>Jasmine</td>
+        <td>Depok</td>
+        <td>2004-01-11</td>
+        <td>Perempuan</td>
+        <td>minek@gmail.com</td>
+        <td>Mahasiswa</td>
+        <td>Booking</td>
+        <td></td>
+        
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>0555</td>
+        <td>Gresya</td>
+        <td>Cibinong</td>
+        <td>2005-04-15</td>
+        <td>Perempuan</td>
+        <td>grey@gmail.com</td>
+        <td>Mahasiswa</td>
+        <td>Booking</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>0666</td>
+        <td>Lee Haechan</td>
+        <td>Jakarta</td>
+        <td>2000-06-06</td>
+        <td>Laki-laki</td>
+        <td>donghyuck@gamil.com</td>
+        <td>Mahasiswa</td>
+        <td>Booking</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>0777</td>
+        <td>Lee Jeno</td>
+        <td>Jakarta</td>
+        <td>2000-06-06</td>
+        <td>Laki-laki</td>
+        <td>lejen@gamil.com</td>
+        <td>Mahasiswa</td>
+        <td>Booking</td>
+        <td></td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
