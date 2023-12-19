@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Lingkaran</title>
+    <style>
+        body{
+            background-color: rgb(162, 162, 239);
+        }
+        h2{
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <h2>Menghitung Luas lingkaran</h2>
+    <input type="number" placeholder="Jari - Jari (cm)" id="luas"> 
+    <br>
+    <br>
+	<button onclick="lingkaran()">Hitung</button>
+    <br>
+    <br>
+	Jadi hasil luas lingkaran adalah : <span id="hasil2"></span>
+    <h2>Menghitung Keliling lingkaran</h2>
+    <input type="number" placeholder="Jari - Jari (cm)" id="keliling"> 
+    <br>
+    <br>
+	<button onclick="lingkaran()">Hitung</button>
+    <br>
+    <br>
+	Jadi hasil keliling lingkaran adalah : <span id="hasil"></span>
+	<br>
+	<br>
+</body>
+<script>
+    function lingkaran() {
+            document.getElementById('hasil2').innerHTML=3.14*parseFloat(Math.pow(luas.value, 2));
+
+			document.getElementById('hasil').innerHTML=2*3.14*parseFloat(keliling.value);
+
+		}
+</script>
+</html>
