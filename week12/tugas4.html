@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <style>
+        h3{
+            text-align: center;
+            color: brown;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h3>Tempat liburan yang ingin kamu kunjungi</h3>
+    <br>
+    <label for="gambar">Tempat liburan:</label>
+    <select id="gambar" onchange="image()">
+        <option id="img1">Pantai</option>
+        <option id="img2">Gunung</option>
+        <option id="img3">Taman</option>
+    </select>
+    <br>
+
+    <img id="gambarpilih" width="400" style="margin-top: 20px;"/>
+
+    <script>
+        function image() {
+            let pilih = document.getElementById("gambar").value;
+            let gambarpilih = document.getElementById("gambarpilih");
+    
+            if (pilih == "Pantai") {
+                gambarpilih.src = "img/pantai.jpg";
+                alert("mau ke pantai?");
+            } else if (pilih == "Gunung") {
+                gambarpilih.src = "img/gunung.jpg";
+                alert("mau ke gunung?");
+            } else if (pilih == "Taman") {
+                gambarpilih.src = "img/taman.jpg";
+                alert("mau ke taman?");
+        }
+    }
+    </script>
+</body>
+</html>
